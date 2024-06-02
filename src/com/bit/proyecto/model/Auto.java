@@ -43,12 +43,15 @@ public class Auto {
         }
     }
 
-    public void frenar() {
+    public void frenar()
+    {
         velocidadActual = 0;
     }
 
-    public void cambiarMarcha(int nuevaMarcha) {
-        if (nuevaMarcha >= 0 && nuevaMarcha <= numeroDeMarchas) {
+    public void cambiarMarcha(int nuevaMarcha)
+    {
+        if (nuevaMarcha >= 0 && nuevaMarcha <= numeroDeMarchas)
+        {
             if (nuevaMarcha == 0 && velocidadActual > 0) {
                 throw new IllegalArgumentException("No se puede engranar la marcha atrás si la velocidad supera los 0 km/h");
             }
@@ -56,13 +59,16 @@ public class Auto {
         }
     }
 
-    public void reducirMarcha(int marchaAnterior) {
-        if (marchaAnterior > 0 && marchaAnterior <= numeroDeMarchas) {
+    public void reducirMarcha(int marchaAnterior)
+    {
+        if (marchaAnterior > 0 && marchaAnterior <= numeroDeMarchas)
+        {
             // Aquí se implementaría la lógica para reducir de marcha
         }
     }
 
-    public double calcularAutonomia(double consumoMedio) {
+    public double calcularAutonomia(double consumoMedio)
+    {
         if (consumoMedio <= 0) {
             throw new IllegalArgumentException("El consumo medio debe ser mayor que 0");
         }
@@ -71,21 +77,26 @@ public class Auto {
         return capacidadTanque / consumoMedio * 100; // Devuelve la autonomía en km
     }
 
-    public double mostrarVolumenCombustible() {
+    public double mostrarVolumenCombustible()
+    {
         // Supongamos que tenemos un atributo `double capacidadTanque`
         double capacidadTanque = 50; // Por ejemplo, 50 litros
         return capacidadTanque;
     }
 
-    public Propietario getPropietario() {
+    public Propietario getPropietario()
+    {
+
         return propietario;
     }
 
-    public Marca getMarca() {
+    public Marca getMarca()
+    {
         return marca;
     }
 
-    public String getVelocidadActual() {
+    public String getVelocidadActual()
+    {
         return String.valueOf(velocidadActual);
 
     }
