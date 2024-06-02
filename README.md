@@ -5,10 +5,9 @@
 ### Solicitudes 
 | Item | Clase       | Estado |
 |------|-------------|--------|
-| 1    | Propietario | ✅     |
-| 2    | Direccion   | ✅     |
-| 3    | Marca       | ✅     |
-| 4    | Auto        | ✅     |
+| 1    |  | ✅     |
+| 2    |    | ✅     |
+| 3    |        | ✅     |
+| 4    |         | ✅     |
 
 ### Resultado:
-![img.png](img.png)
