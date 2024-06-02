@@ -1,4 +1,6 @@
 
+import com.bit.proyecto.test.EmpleadoTest;
+
 import java.time.LocalDate;
 
 public class Main {
@@ -11,5 +13,7 @@ public class Main {
         System.out.println("╠════════════════════════════════════════════════════════╣");
         System.out.println("║ JAVA  SDK 17                                           ║");
         System.out.println("╚════════════════════════════════════════════════════════╝");
+        EmpleadoTest prueba = new EmpleadoTest();
+        prueba.pruebaEmpleado();
     }
 }
