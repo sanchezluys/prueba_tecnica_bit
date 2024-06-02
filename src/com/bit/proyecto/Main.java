@@ -1,5 +1,6 @@
+package com.bit.proyecto;
 
-import java.time.LocalDate;
+import com.bit.proyecto.test.FacturaTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,5 +12,9 @@ public class Main {
         System.out.println("╠════════════════════════════════════════════════════════╣");
         System.out.println("║ JAVA  SDK 17                                           ║");
         System.out.println("╚════════════════════════════════════════════════════════╝");
+        //
+        FacturaTest prueba = new FacturaTest();
+        prueba.revisarFactura();
     }
+
 }
